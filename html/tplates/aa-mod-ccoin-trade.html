@@ -1,0 +1,223 @@
+<table style="margin:0 auto; width: 100%;" align="center" cellpadding="3" cellspacing="0">
+					  <tr>
+						  <td style="height: 28px">
+						  <table style="margin:0 auto" align="center">
+							  <tr>
+								  <td>&nbsp;</td>
+								  <td style="width: 32px"><div id="dcc_cp_symbol" class="txtSmall txtClrNrml">
+									  --</div></td>
+								  <td>/</td>
+								  <td><select size="1" name="inpOrderQuote" id="inpOrderQuote" class="slmtable txtSmall txtBold crsrPointer"  onfocus="javascript:JSSHOP.ui.closeLbox();">
+ 
+                                      </select></td>
+								  </tr>
+						  </table>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+						  -----------------------------------------------------------------------------------------------------------------------------------------------------</td>
+					  </tr>
+					  <tr>
+						  <td>
+						   <div style="margin:0 auto;max-width:300px"  align="center" id="dcc_cp_price" class="txtBig txtBold txtClrGrey">
+									  --</div>
+						   </td>
+					  </tr>
+					  <tr>
+						  <td style="text-align: center;">
+						   </td>
+					  </tr>
+					  <tr>
+						  <td style="text-align: center;">
+						   </td>
+					  </tr>
+					  <tr>
+						  <td  style="background-color: #E2FFC6">
+						  <table  style="margin:0 auto" align="center">
+							  <tr>
+								  <td style="width: 64px"><div  id="dvOSbtnBuy" class="clsDivBtnDef crsrPointer" onclick="javascript:doOrderSideSwitch('buy')">Buy</div></td>
+								  <td style="width: 64px"></td>
+								  <td style="width: 64px"><div  id="dvOSbtnSell" class="clsDivBtnNone crsrPointer" onclick="javascript:doOrderSideSwitch('sell')">Sell</div></td>
+								  <td style="width: 64px">&nbsp;</td>
+								  <td style="width: 64px"><div  id="dvOSbtnStats" class="clsDivBtnNone crsrPointer" onclick="javascript:doOrderSideSwitch('stats')">Stats</div></td>
+						  </tr>
+						  </table>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td><div id="dvSymbTradeBtns" style="visibility:visible;display:block">
+							  <table style="width: 100%" cellpadding="3" cellspacing="0">
+								  <tr>
+						  <td>
+						   </td>
+					  			</tr>
+								  <tr>
+						  <td style="background-color: #FFFFCC">
+						  <table style="margin:0 auto" align="center" cellpadding="3" cellspacing="0">
+							  <tr>
+								  <td align="center">
+						  		<span class="txtSmaller txtBold txtClrGrey">
+								  Order Type</span></td>
+							  </tr>
+							  <tr>
+								  <td>
+						  <select size="1" name="inpOrderType" id="inpOrderType" class="slmtable txtSmall txtBold crsrPointer" onchange="javascript:fixOFieldsUI('inpOrderType');">
+                                      <option value="MARKET">Market</option>
+										<option value="LIMIT">Limit</option>
+                                      <!-- <option value="STOP_LOSS_LIMIT">Stop Loss Limit</option> -->
+                                      </select></td>
+							  </tr>
+						  </table>
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td class="txtSmaller txtClrGrey" style="visibility: visible; display: block; text-align: center; background-color: #FFFFCC;" id="tdBlurMrkPrice">
+						  Market Price</td>
+					  			</tr>
+								  <tr>
+						  <td style="background-color: #FFFFCC">
+						  <div id="tdOStopL" style="display: none;visibility: hidden">
+							  <table>
+							  <tr>
+								  <td>
+						  		Stop: </td>
+								  <td>
+						  <a href="javascript:doNumberSlide('inpOStopL',true,true);" class="txtBold txtBig">+</a></td>
+								  <td>
+						  <input type="text" name="inpOStopL" id="inpOStopL" value="Stop[USDT]" class="txtSmall txtBold"></td>
+								  <td><a href="javascript:doNumberSlide('inpOStopL',true,false);" class="txtBold txtBig">-</a></td>
+							  </tr>
+						  </table>
+						  </div></td>
+					  			</tr>
+								  <tr>
+						  <td style="display:none;visibility:hidden; text-align: center; background-color: #FFFFCC;" id="tdOLimit">
+						  <table style="margin: 0 auto" align="center">
+							  <tr>
+								  <td>
+						  		  &nbsp;</td>
+								  <td style="text-align: center">
+						  		<span class="txtSmaller txtBold txtClrGrey">
+															  		Limit:</span></td>
+								  <td style="width: 6px">&nbsp;</td>
+							  </tr>
+							  <tr>
+								  <td>
+						  <a href="javascript:doNumberSlide('inpOLimit',true,true);" class="txtBold txtBig">+</a></td>
+								  <td>
+						  <input type="text" name="inpOLimit" id="inpOLimit" value="Limit[USDT]" class="txtSmall txtBold"></td>
+								  <td><a href="javascript:doNumberSlide('inpOLimit',true,false);" class="txtBold txtBig">-</a></td>
+							  </tr>
+						  </table>
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td style="background-color: #FFFFCC">
+ </td>
+					  			</tr>
+								  <tr>
+						  <td style="text-align: center; min-height:15px">
+ 						 </td>
+					  			</tr>
+								  <tr>
+						  <td style="text-align: center; height: 23px; background-color: #E9FFD2;">
+						  <span class="txtSmaller txtBold txtClrGrey">
+															  		Qty:</span></td>
+					  			</tr>
+								  <tr>
+						  <td style="background-color: #E9FFD2">
+						  <table style="margin:0 auto" align="center">
+							  <tr>
+								  <td style="height: 26px">
+						  <a href="javascript:doNumberSlide('inpOQty',true,true);" class="txtBold txtSmall">+</a></td>
+								  <td style="height: 26px">
+						  <input type="number" name="inpOQty" id="inpOQty" value="" class="txtSmall txtBold"></td>
+								  <td style="height: 26px"><a href="javascript:doNumberSlide('inpOQty',true,false);" class="txtBold txtSmall">-</a></td>
+							  </tr>
+						  </table>
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td style="background-color: #E9FFD2">
+						  <table align="center" style="border: 1px solid #808000; margin: 5px auto;" cellpadding="5px" cellspacing="5px">
+							  <tr>
+								  <td class="txtSmall brdrCleHdr">%</td>
+								  <td style="text-align: center"><div class="txtSmall crsrPointer" onclick="splitOrderQty(4)">25</div></td>
+								  <td style="text-align: center">|</td>
+								  <td style="text-align: center"><div class="txtSmall crsrPointer" onclick="splitOrderQty(2)">50</div></td>
+								  <td style="text-align: center">|</td>
+								  <td style="text-align: center"><div class="txtSmall crsrPointer" onclick="splitOrderQty(1.32)">75</div></td>
+								  <td style="text-align: center">|</td>
+								  <td style="text-align: center"><div class="txtSmall crsrPointer" onclick="splitOrderQty(1)">100</div></td>
+							  </tr>
+						  </table>
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td style="background-color: #E2FFC6"><table style="margin:0 auto">
+							  <tr>
+								  <td><span class="txtSmaller txtBold txtClrGrey">
+															  		Avail:</span></td>
+								  <td><span  id="dvcurrCAv" class="txtSmaller txtBold txtClrHdr"></span></td>
+							  </tr>
+							  </table>
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td style="text-align: center; min-height:15px">
+						   <table style="width: 100%">
+							   <tr>
+								   <td><div>
+									   <table style="width: 100%">
+										   <tr>
+											   <td>&nbsp;</td>
+										   </tr>
+									   </table>
+								   </div></td>
+							   </tr>
+						   </table>
+						   </td>
+					  			</tr>
+								  <tr>
+						  <td style="text-align: center;">
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td style="text-align:center" align="center"><button id="dvBtnSendOrder" class="slmtable brdrClrHdr bkgdClrDlg crsrPointer" style="min-width:80px;text-align: center;margin:10px" onclick="doNuTestOrder(getNuOrderObj())">Buy</button></td>
+					  			</tr>
+								  <tr>
+									  <td>&nbsp;</td>
+								  </tr>
+							  </table>
+						  </div></td>
+					  </tr>
+					  <tr>
+						  <td><div id="dvSymbTradeStats"><div id="dvPopSymbolCnt" style="max-width:400px;padding:5px;min-height:20px;overflow:auto;max-height:160px;" class="txtSmaller">
+							  <table style="width: 100%">
+								  <tr>
+									  <td><div id="dvPopSocket" class="txtSmaller" style="max-width: 380px;word-wrap: break-word;margin: 0px; padding: 0px">
+										  &nbsp;cvbcvbgbcv</div></td>
+								  </tr>
+								  <tr>
+									  <td>&nbsp;</td>
+								  </tr>
+							  </table>
+							  </div></div></td>
+					  </tr>
+					  <tr>
+						  <td>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>
+						  <div id="dc_cc_filters"></div></td>
+					  </tr>
+					  </table>
+ 
+ 
+ 
+ 
+<img alt="imgldr" height="4px" width="4px" src="images/misc/trans.gif">
+
+

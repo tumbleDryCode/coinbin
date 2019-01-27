@@ -1,0 +1,44 @@
+﻿
+.cellHdrSmall {
+float: left;
+margin:2px;
+min-width:40px;
+overflow:hidden;
+font-weight:bold;
+}
+
+.cellHdrBig {
+float: left;
+margin:2px;
+min-width:60px;
+overflow:hidden;
+font-weight:bold;
+}
+
+
+.cellQPriceSell {
+float: left;
+margin:2px;
+min-width:100px;
+overflow:hidden;
+font-weight:bold;
+color: #409980;
+}
+
+.cellQPriceBuy {
+float: left;
+margin:2px;
+min-width:100px;
+overflow:hidden;
+font-weight:bold;
+color: #994080;
+}
+
+.cellQPriceHold {
+float: left;
+margin:2px;
+min-width:100px;
+overflow:hidden;
+font-weight:bold;
+color: #000000;
+}

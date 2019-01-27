@@ -1,0 +1,206 @@
+/*
+
+bright: rgb(234,242,255);
+normal: rgb(120,172,255);
+dark:	rgb(0,66,174);
+
+*/
+
+
+
+
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	width:		100%;
+}
+
+.dynamic-tab-pane-control .tab-row .tab {
+
+ 
+	cursor:			Default;
+	margin:			1px -5px 1px 5px;
+
+	padding:		3px 6px 3px 6px;
+ 
+	border-left:	0;
+	border-bottom:	0;
+	border-top:		0;
+	text-align: center;
+	cursor:			hand;	
+	position:		relative;
+	float:			left;
+
+	/* 
+	display:		inline;
+
+	font-family:	Verdana, Helvetica, Arial;
+	z-index:		1;
+
+	top:			0; */
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected {
+ 
+	/* z-index:		3; */
+	padding:		2px 6px 5px 6px;
+	margin:			1px -6px -2px 0px;
+	top:			-2px;
+ 
+}
+
+.dynamic-tab-pane-control .tab-row .tab a {
+ 
+ 
+	color:				rgb(0,66,174);
+	text-decoration:	none;
+	cursor:			hand;
+	cursor:			pointer;	
+}
+
+.dynamic-tab-pane-control .tab-row .hover a {
+	color:	rgb(0,66,174);
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected a {
+	font-weight:	bold;
+}
+
+.dynamic-tab-pane-control .tab-page {
+	clear:			both;
+ 
+	/* z-index:		2;  */
+	position:		relative;
+	top:			-2px;
+	color:			Black;
+
+	font-size:		13px;
+	padding:		10px;
+}
+
+.dynamic-tab-pane-control .tab-row {
+	/* z-index:		1;
+	white-space:	nowrap;
+	background:		rgb(0,0,0); */
+	height:			1.85em;
+	width:			100%;
+}
+
+
+
+.dynamic-tab-pane-control .tab-row .tab {
+	align: center;
+       color: #000000;
+
+	cursor:			Default;
+	margin:			1px -5px 1px 5px;
+	padding:		3px 6px 3px 6px;
+	/ª background:		rgb(120,120,180); ª/
+ 
+	text-align: center;
+	cursor:			hand;	
+	position:		relative;
+	float:			left;
+
+ 
+      margin-left: 10px;
+  	margin-right: 10px;
+
+	/* 
+	display:		inline;
+
+	font-family:	Verdana, Helvetica, Arial;
+	z-index:		1;
+
+	top:			0; */
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected {
+
+ 	color: rgb(120,120,180);
+
+	align: center;
+ 
+	/* z-index:		3; */
+	padding:		2px 6px 5px 6px;
+	margin:			1px -6px -2px 0px;
+	top:			-2px;
+ 
+      	border-bottom:	1px solid #000000;
+      margin-left: 10px;
+  	margin-right: 10px;
+}
+
+
+.dynamic-tab-pane-control .tab-page {
+    margin-top: 15px;
+}
+
+.dynamic-tab-pane-control .tab-row .tab a {
+	color: #000000;	
+}
+
+.dynamic-tab-pane-control .tab-row .tab.selected a {
+	font-weight:	bold;
+ 	color: rgb(120,120,180);
+}
+
+
+.stTab {
+	align: center;
+      color: #000000;
+
+	cursor:			Default;
+	margin:			1px -5px 1px 5px;
+	padding:		3px 6px 3px 6px;
+ 
+ 
+	text-align: center;
+	cursor:			hand;	
+	position:		relative;
+	float:			left;
+
+ 
+      margin-left: 6px;
+  	margin-right: 6px;
+
+	/* 
+	display:		inline;
+
+	font-family:	Verdana, Helvetica, Arial;
+	z-index:		1;
+
+	top:			0; */
+}
+
+.stTab.selected {
+
+ 
+
+	align: center;
+ 
+	/* z-index:		3; */
+	padding:		2px 6px 5px 6px;
+	margin:			1px -6px -2px 0px;
+	top:			-2px;
+ 
+ 
+      margin-left: 6px;
+  	margin-right: 6px;
+	color: rgb(120,120,180);
+}
+
+.stTab.clicked {
+
+ 
+
+	align: center;
+ 
+	/* z-index:		3; */
+	padding:		2px 6px 5px 6px;
+	margin:			1px -6px -2px 0px;
+	top:			-2px;
+ 
+ 
+      margin-left: 5px;
+  	margin-right: 5px;
+}

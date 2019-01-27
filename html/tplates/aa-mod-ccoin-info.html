@@ -1,0 +1,427 @@
+ 
+				  <table class="txtSmall" style="margin-right:20px">
+					  <tr>
+						  <td style="height: 39px"><table style="margin:0 auto" align="center">
+							  <tr>
+								  <td><img id="imgShwCI" src="" class="smlbtn" onclick="javascript:alert(this.src)" style="max-width:40px; margin-right:20px;"></td>
+								  <td><div id="ddc_cc_symbol" class="txtBig txtBold txtClrHdr" style="padding-right:15px"></div></td>
+								 <td><div id="ddc_cc_name" class="txtSmaller txtColorGrey"></div></td>
+								  <td><div id="dvcurrCAv"></div></td>
+								  <td><input type="hidden" id="modaa_cc_bsymbol" value=""><input type="hidden" id="modaa_cp_price" value=""></td>
+							  </tr>
+							  </table>
+						  </td>
+					  			</tr>
+					  <tr>
+						  <td>
+						  &nbsp;</td>
+					  </tr>
+					  <tr>
+						  <td style="height: 29px">
+						  <table style="margin:0 auto" align="center">
+							  <tr>
+								  <td style="width: 4px"><span  class="txtSmall txtClrNrml">&nbsp;</span></td>
+								  <td><span  id="dvCIbtnAbout" class="clsDivBtnNone crsrPointer" onclick="javascript:doCInfoSideSwitch('about')">
+									  About</span></td>
+								  <td><span class="txtSmaller txtClrDlg">&nbsp;&nbsp; |&nbsp; &nbsp;</span></td>
+								  <td><span id="dvCIbtnFnx" class="clsDivBtnDef crsrPointer" onclick="javascript:doCInfoSideSwitch('fnx')">
+									  Stats</span></td>
+								  <td><span class="txtSmaller txtClrDlg">&nbsp;&nbsp; |&nbsp; &nbsp;</span></td>
+								  
+								  
+								  <td><span id="dvCIbtnAlerts" class="clsDivBtnNone crsrPointer" onclick="javascript:doCInfoSideSwitch('alerts')">
+									  Alerts</span></td>
+								  <td><span class="txtSmaller txtClrDlg">&nbsp;&nbsp; |&nbsp; &nbsp;</span></td>
+
+
+
+								  <td><span id="dvCIbtnNews" class="clsDivBtnNone crsrPointer" onclick="javascript:doCInfoSideSwitch('news')">
+									  News</span>&nbsp;</td>
+								  <td><span class="txtSmaller txtClrDlg">&nbsp;&nbsp; |&nbsp; &nbsp;</span></td>
+								  <td><span id="dvCIbtnNotes" class="clsDivBtnNone crsrPointer" onclick="javascript:doCInfoSideSwitch('notes')">
+									  Notes</span>&nbsp;</td>
+
+						  </tr>
+						  </table>
+						  </td>
+					  </tr>
+					  <tr>
+						  <td>&nbsp;</td>
+					  			</tr>
+					  <tr>
+						  <td style="height: 23px"></td>
+					  			</tr>
+					  <tr>
+						  <td style="ord-wrap: break-word;">
+						  <div id="dvPopSymbolAbout" style="word-wrap: break-word; max-width: 100%; padding:5px;min-height:20px;visibility: hidden;overflow:auto;display:none">
+							  <table style="width: 100%">
+								  <tr>
+						  <td><div id="dvPopSymbolCnt" style="word-wrap: break-word; padding:5px;min-height:20px;" class="txtSmaller txtBold">
+							  --</div>
+						  </td>
+					  			</tr>
+								  <tr>
+						  <td>
+						  <div id="dvPopSymbolCntA" style="padding:5px;min-height:20px;" class="txtSmaller txtBold">
+							  --</div>
+						  </td>
+					  			</tr>
+								  </table>
+						  </div></td>
+					  </tr>
+					  <tr>
+					<td>
+						  	<div id="dvPopSymbolNews" style="word-wrap: break-word; max-width: 100%; padding:5px;min-height:20px;visibility: hidden;overflow:auto;display:none">
+						  	<div id="dvPopEditNews"  style="padding:5px;min-height:20px;overflow:auto;max-height:300px" contenteditable="true" class="cls_input_tarea">
+								news</div></div>
+								 
+
+
+
+
+
+</td>
+					  </tr>
+					  <tr>
+					<td>
+						  	<div id="dvPopSymbolNotes" style="word-wrap: break-word; max-width: 100%; padding:5px;min-height:20px;visibility: hidden;overflow:auto;display:none">
+ 
+								<div id="dvPopEditNotes"  style="padding:5px;min-height:20px;overflow:auto;max-height:300px" contenteditable="true" class="cls_input_tarea">notes</div>
+<button id="btnEUsave" class="clsDDBtnSave rtable" onclick="javascript:saveNote();"><img alt="18" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" width="4" height="4" onload="dw(this.parentNode, stxt[21]);"  onerror="dw(this.parentNode, stxt[21]);">save</button></div>
+
+
+
+
+
+
+</td>
+					  </tr>
+					  <tr>
+					<td>
+						  	<div id="dvPopSymbolAlerts" style="word-wrap: break-word; max-width: 100%; padding:5px;min-height:20px;visibility: hidden;overflow:auto;display:none">
+						  	<div id="dvPopEditAlerts">
+								<table style="width: 100%">
+									<tr>
+										<td>
+										<table>
+											<tr>
+												<td>
+												<table cellpadding="0" cellspacing="0">
+													<tr>
+												<td>Alert</td>
+												<td><table>
+					<tr>
+						<td><table><tr><td>
+							<span id="lblAlertOn"  style="vertical-align:super"></span></td></tr></table></td>
+						<td><div class="switch">
+    <label>
+     
+      <input type="checkbox" id="chcbAlertOn" name="chcbAlertOn" onchange="javascript:setPersistAlert();">
+      <span class="lever" style="float:right"></span>
+     
+    </label>
+  									  </div>	</td>
+					</tr>
+				</table></td>
+													</tr>
+												</table>
+												</td>
+												<td>&nbsp;</td>
+												<td>
+												<table cellpadding="0" cellspacing="0">
+													<tr>
+												<td>Persistant</td>
+												<td><table>
+					<tr>
+						<td><table><tr><td>
+							<span id="lblPersistAlert"  style="vertical-align:super"></span></td></tr></table></td>
+						<td><div class="switch">
+    <label>
+     
+      <input type="checkbox" id="chcbPersistAlert" name="chcbPersistAlert"  onchange="javascript:setPersistAlert();">
+      <span class="lever" style="float:right"></span>
+     
+    </label>
+  									  </div>	</td>
+					</tr>
+				</table></td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+										<table>
+											<tr>
+												<td>Price</td>
+												<td>&nbsp;</td>
+												<td><div id="ddcc_cp_price" style="min-height:20px;" class="txtBold txtClrHdr"></div></td>
+											</tr>
+											<tr>
+																	  <td>
+															  		<span class="txtSmaller txtBold txtClrGrey">
+															  		High</span></td>
+																	  <td>
+															  		  </td>
+																	  <td>
+																	  <div id="ddcc_cp_high_price" class="txtSmall txtClrHdr"></div>
+																	  </td>
+																  </tr>
+											<tr>
+																	  <td>
+															  		<span class="txtSmaller txtBold txtClrGrey">
+															  		Low</span></td>
+																	  <td>
+															  		  </td>
+																	  <td>
+																	  <div id="ddcc_cp_low_price" style="min-height:20px;" class="txtSmall txtClrHdr"></div>
+																	  </td>
+																  </tr>
+											<tr>
+																	  <td>
+															  		  <span class="txtSmaller txtBold txtClrGrey">
+															  Level:</span></td>
+																	  <td>
+															  		  &nbsp;</td>
+																	  <td>
+															  <div id="ddcc_cc_level_price" class="txtSmall txtClrHdr"></div>
+																	  </td>
+																  </tr>
+											<tr>
+												<td><input type="hidden" id="inp_cp_price" value="0"></td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>Higher than:</td>
+												<td>&nbsp;</td>
+												<td><table style="margin: 0 auto" align="center">
+							  <tr>
+								  <td>
+						  <a href="javascript:doNumberSlide('inpAlertHigh',true,true);" class="txtBold txtBig">+</a></td>
+								  <td>
+						  <input type="text" name="inpAlertHigh" id="inpAlertHigh" value="Limit[USDT]" class="txtSmall txtBold txtClrGrey"></td>
+								  <td><a href="javascript:doNumberSlide('inpAlertHigh',true,false);" class="txtBold txtBig">-</a></td>
+							  </tr>
+						  </table>
+</td>
+											</tr>
+											<tr>
+												<td>Lower than:</td>
+												<td>&nbsp;</td>
+												<td><table style="margin: 0 auto" align="center">
+							  <tr>
+								  <td>
+						  <a href="javascript:doNumberSlide('inpAlertLow',true,true);" class="txtBold txtBig">+</a></td>
+								  <td>
+						  <input type="text" name="inpAlertLow" id="inpAlertLow" value="Limit[USDT]" class="txtSmall txtBold txtClrGrey"></td>
+								  <td><a href="javascript:doNumberSlide('inpAlertLow',true,false);" class="txtBold txtBig">-</a></td>
+							  </tr>
+						  </table>
+</td>
+											</tr>
+											<tr>
+												<td><button id="btnAlertsave" class="clsDDBtnSave rtable" onclick="javascript:saveAlert();"><img alt="18" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" width="4" height="4" onload="dw(this.parentNode, stxt[21]);"  onerror="dw(this.parentNode, stxt[21]);">saaave</button></td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+								</table>
+								</div></div>
+</td>
+					  </tr>
+					  <tr>
+						  <td>
+						  						  <div id="dvPopSymbolFnx" style="width:100%;padding:5px;min-height:20px;overflow:auto;max-height:400px;visibility: visible; display:block" class="cls_input_tarea txtBold">
+													  <table style="width: 100%">
+														  <tr>
+															  <td style="background-color: #E2FFC6"><table style="margin:0 auto" align="center">
+																  <tr>
+																	  <td>
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  		Price</span></td>
+																	  <td>
+															  		  &nbsp;</td>
+																	  <td>
+																	  <div id="ddc_cp_price" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div>
+																	  </td>
+																  </tr>
+																  <tr>
+																	  <td>
+															  		<span class="txtSmaller txtBold txtClrGrey">
+															  		High</span></td>
+																	  <td>
+															  		  </td>
+																	  <td>
+																	  <div id="ddc_cp_high_price" class="txtSmall txtBold txtClrHdr"></div>
+																	  </td>
+																  </tr>
+																  <tr>
+																	  <td>
+															  		<span class="txtSmaller txtBold txtClrGrey">
+															  		Low</span></td>
+																	  <td>
+															  		  </td>
+																	  <td>
+																	  <div id="ddc_cp_low_price" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div>
+																	  </td>
+																  </tr>
+																  <tr>
+																	  <td>
+															  		  <span class="txtSmaller txtBold txtClrGrey">
+															  Level:</span></td>
+																	  <td>
+															  		  &nbsp;</td>
+																	  <td>
+															  <div id="ddc_cc_level_price" class="txtSmall txtBold txtClrHdr"></div>
+																	  </td>
+																  </tr>
+																  </table></td>
+														  </tr>
+														  <tr>
+															  <td><hr></td>
+														  </tr>
+														  <tr>
+															  <td>
+															  <table style="margin:0 auto; " align="center" cellpadding="3">
+														  <tr>
+															  <td>
+															  &nbsp;</td>
+															  <td>
+															  &nbsp;</td>
+															  <td>
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  Supply</span></td>
+															  <td>
+															  &nbsp;</td>
+															  <td>
+															  &nbsp;</td>
+														  </tr>
+														  <tr>
+															  <td>
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  [Max]:</span></td>
+															  <td>
+															  </td>
+															  <td>
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  [Total]:</span></td>
+															  <td>
+															  </td>
+															  <td>
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  [Available]:</span></td>
+														  </tr>
+														  <tr>
+															  <td><div id="ddc_cc_max_supply" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div></td>
+															  <td>
+															  &nbsp;</td>
+															  <td>
+															  <div id="ddc_cc_total_supply" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div></td>
+															  <td>
+															  &nbsp;</td>
+															  <td>
+															  <div id="ddc_cc_available_supply" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div></td>
+														  </tr>
+														  <tr>
+															  <td>
+															  &nbsp;</td>
+															  <td>&nbsp;</td>
+															  <td>&nbsp;</td>
+															  <td>&nbsp;</td>
+															  <td>
+															  &nbsp;</td>
+														  </tr>
+														  <tr>
+															  <td style="background-color: #E2FFC6">
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  Market Cap:</span></td>
+															  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+															  &nbsp;</td>
+															  <td><span class="txtSmaller txtBold txtClrGrey">
+															  		  Volume</span></td>
+															  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+															  &nbsp;</td>
+															  <td style="background-color: #FFFFFF">
+															  <span class="txtSmaller txtBold txtClrGrey">
+															  %Chg</span></td>
+														  </tr>
+														  <tr>
+															  <td style="height: 27px; background-color: #E2FFC6">
+															  <div id="ddc_cc_market_cap" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div></td>
+															  <td style="height: 27px"></td>
+															  <td style="height: 27px">
+															  <div id="ddc_cp_volume" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div>
+																	  </td>
+															  <td style="height: 27px"></td>
+															  <td style="height: 27px; background-color: #FFFFFF">
+															  <div id="ddc_cc_pct_day_chg" style="min-height:20px;" class="txtSmall txtBold txtClrHdr"></div>
+																	  </td>
+														  </tr>
+														  </table></td>
+														  </tr>
+														  <tr>
+															  <td></td>
+														  </tr>
+														  <tr>
+															  <td></td>
+														  </tr>
+														  </table>
+&nbsp;	<table style="width: 100%">
+														  <tr>
+															  <td style="height: 23px">
+															  
+															  </td>
+														  </tr>
+														  <tr>
+															  <td>
+															  &nbsp;</td>
+														  </tr>
+														  <tr>
+															  <td>&nbsp;</td>
+														  </tr>
+ 
+														  <tr>
+															  <td>
+															  <div id="ddc_cp_prices_list" style="max-width:20px;word-wrap: break-word; visibility:hidden; display:none" class="txtSmaller"></div>
+															  </td>
+														  </tr>
+														  <tr>
+															  <td></td>
+														  </tr>
+													  </table>
+												  </div>
+						  </td>
+					  </tr>
+					  </table>
+ 
+ 
+ 
+ 
+<img alt="imgldr" height="4px" width="4px" src="images/misc/trans.gif">
+
+

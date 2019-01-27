@@ -1,0 +1,530 @@
+
+<head>
+<style type="text/css">
+#tdTitleBar2 {
+	text-align: left;
+}
+</style>
+</head>
+
+				
+				
+				
+				
+				
+<table style="margin: 0 auto;" align="center" width="100%">
+	<tr>
+		<td>
+		<div style="text-align:right;min-height:45px;float:right" id="dvLoading" class="txtSmaller txtBold txtClrRed"></div>
+
+
+		<div class="tab-pane" id="tabPane1">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="tab-main" id="tpageHome">
+				<div class="tab" id="tabSHome">
+					Home</div>
+					<div class="tab-pane" id="tpaneHome">
+
+				 <div class="tab-page" id="tpHomeA">
+						<div class="tab"  id="tbHomeTokens">
+							<div onclick="javascript:doHome('Top');">Tokens</div></div>
+<table style="width: 100%"> 
+				<tr>
+					<td style="color: #000000">
+					<div id="dvHomePage"></div></td>
+		</tr>
+	</table>
+							
+					</div>
+					
+					<div class="tab-page" id="tpMrkt1">
+						<div class="tab" style="color: #000000" id="tbMktsFAVS"><div onclick="javascript:doFirstLoad('FAVS')">
+							Favorites</div></div>
+						<table style="width: 100%">
+					<tr>
+						<td class="nada">
+						 <div id="dvMListFAVS" style="min-height:60px"></div> 
+					</tr>
+					<tr>
+						<td style="height: 23px"></td>
+					</tr>
+				</table>
+					</div>
+
+<div class="tab-page" id="tpHomeAlerts">
+						<div class="tab" style="color: #000000" id="tbHomeAlerts"><div onclick="javascript:doFirstLoad('ALERTS')">
+							Alerts</div></div>
+						<table style="width: 100%">
+					<tr>
+						<td class="nada">
+						 <div id="dvMListALERTS" style="min-height:60px"></div> 
+					</tr>
+					<tr>
+						<td style="height: 23px"></td>
+					</tr>
+				</table>
+					</div>
+
+					
+					
+					
+<div class="tab-page" id="tpFunds2">
+						<div class="tab">
+							RSS</div>
+<table style="width: 100%">
+				<tr>
+					<td style="color: #000000">
+					<table style="width: 100%; color: #000000">
+						<tr>
+							<td style="color: #000000"><table>
+			 <tr>
+				 <td>Url:<input type="hidden" id="currRSSTitleClr" value="#000000"><input type="hidden" id="currRSSDescClr" value="#000000"></td>
+				 <td><select size="1" name="slctRssUrl" id="slctRssUrl" class="cls_input_text crsrPointer"  onblur="this.className='cls_input_text crsrPointer'" onfocus="this.className='cls_input_text cls_input_text_focus crsrPointer'" style="-webkit-appearance: none;height:2rem" onchange="javascript:getRSSfeed(this.options[this.selectedIndex].value);">
+<option title="CoinReport" value="https://coinreport.net/feed/">CoinReport</option> 
+<option title="CoinReport" value="http://localhost/testa.txt">TEST!</option> 
+
+<option title="bitcointalk" value="http://www.bitcointalkradio.com/feed/">bitcointalk</option> 
+<option title="99 Bitcoins" value="https://99bitcoins.com/feed">99 Bitcoins</option> 
+<option title="Google" value="https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&q=bitcoin&output=rss">Google</option> 
+<option title="Google" value="https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&q=poly-coin-cyrypto&output=rss">Poly</option> 
+
+<option title="NewsBTC" value="https://www.newsbtc.com/feed/">NewsBTC</option> 
+<option title="Blockchain Blog" value="https://blog.blockchain.com/feed/">Blockchain Blog</option> 
+<option title="Altcoin Today" value="http://www.altcointoday.com/feed/">CryptoCompare</option> 
+<option title="Crypto Mining Blog" value="http://cryptomining-blog.com/feed/">Crypto Mining Blog</option> 
+<option title="allcoinsnews.com" value="http://allcoinsnews.com/feed/">allcoinsnews</option> 
+<option title="The Let&#39;s Talk Bitcoin Network" value="http://feeds.feedburner.com/TheDailyBitcoinShow">Talk Bitcoin</option> 
+<option title="CoinDesk" value="http://feeds.feedburner.com/CoinDesk">CoinDesk</option> 
+<option title="Bitcoin Magazine" value="http://feeds.feedburner.com/BitcoinMagazine">Bitcoin</option> 
+<option title="Cryptocurrency   Tech Talk" value="http://feeds.feedburner.com/BitcoinIndependentNewsAndBlog">Cryptocurrency</option> 
+<option title="Bitcoin Org" value="https://bitcoin.org/en/rss/blog.xml">Bitcoin Org  Blog</option>
+<option title="Coinbase blog" value="https://blog.coinbase.com/feed">Coinbase Blog</option>
+<option title="Bitfinex" value="http://blog.bitfinex.com/feed">Bitfinex Blog</option>
+<option title="a bitco" value="http://abitco.in/feed">A bitco</option>
+<option title="a bitco" value="http://forklog.net/feed">Forklog</option>
+<option title="blockchain blog" value="https://blog.blockchain.com/feed">blockchain blog</option>
+</select></td>
+			 </tr>
+		 </table></td>
+						</tr>
+						<tr>
+							<td style="height: 33px"><div id="dvRss"  style="max-width:7500px;padding:5px;min-height:20px;overflow:auto;max-height:300px"  class="cls_input_tarea">Link divSs</div></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="height: 23px"></td>
+				</tr>
+			</table>
+		</td>
+		</tr>
+	</table>
+							
+					</div>			
+					
+					
+					
+					<div class="tab-page" id="tpHomeHelp">
+						<div class="tab" style="color: #000000" id="tbHomeHelp"><div onclick="javascript:getHelpPage();">
+							Help</div></div>
+						<table style="width: 100%">
+					<tr>
+						<td class="nada">
+						 <div id="dvMListHelp" style="min-height:60px">help</div> 
+					</tr>
+					<tr>
+						<td style="height: 23px"></td>
+					</tr>
+				</table>
+					</div>
+
+					
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</div>
+			</div>
+			
+			
+			
+			
+		
+		
+		
+			<div class="tab-main" id="tpageMarkets">
+				<div class="tab" id="tabSMarkets" style="color: #000000">
+					<div id="tbMainMkts">Markets</div></div>				
+				<div class="tab-pane" id="tpaneMarkets"></div>
+			</div>
+			
+			
+			
+			
+			
+			<div class="tab-main" id="tpageTrades">
+				<div class="tab" id="tabSTrades">
+					Trades</div>
+					<div class="tab-pane" id="tpaneTrades">
+
+				 <div class="tab-page" id="tpTradesA">
+						<div class="tab" id="tbTradesA">
+							<div onclick="javascript:doFirstLoad('TRADES');">Open Orders</div></div>
+<table style="width: 100%"> 
+				<tr>
+					<td style="color: #000000">
+					<div id="dvMListTRADES"></div></td>
+		</tr>
+	</table>
+							
+					</div>
+<div class="tab-page" id="tpTradeB">
+						<div class="tab" id="tbTradesB">
+							<div onclick="javascript:doFirstLoad('ORDERS')">History</div></div>
+<table style="width: 100%"> 
+				<tr>
+					<td style="color: #000000">
+					<div id="dvMListORDERS"></div></td>
+		</tr>
+	</table>
+							
+					</div>
+			</div>
+			</div>
+			
+			
+			
+			
+			
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+			<div class="tab-main" id="tpageFunds">
+				<div class="tab" id="tabSFunds">
+					<div onclick="javascript:doFirstLoad('ASSETS')">Funds</div></div>
+				<div class="tab-pane" id="tpaneFunds">
+	 
+						<table style="width: 100%; text-align: center">
+							<tr>
+								<td>
+								<table style="width: 100%">
+									<tr>
+										<td><div id="dvMListASSETS" class="txtSmaller"></div></td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+		 
+					
+					
+					
+					
+					
+					
+					
+					
+
+					
+
+
+
+					
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+
+<div class="tab-main" id="tpageAccnt">
+				<div class="tab" id="tabSAccnt">
+					Accnt</div>
+				<div class="tab-pane" id="tpaneAccnt">
+					<div class="tab-page" id="tpAccnt1">
+						<div class="tab"  id="tbAccnt1">
+							Setup</div>
+						<table style="width: 100%; text-align: center">
+							<tr>
+								<td id="tdAccntOne" class="txtSmall">
+								<table style="width: 100%">
+									<tr>
+						  <td>
+					<table  class="clsDvCntntTtle" width="100%" cellpadding="2"><tr>
+						<td width="100%" id="tdTitleBar2" class="txtBig">
+						Rebuild Database</td></tr></table>
+
+ 
+</td>
+					    			</tr>
+									<tr>
+										<td style="text-align: left">This demo comes with 
+										coinbin/coinbin.db sqlite database file.<br>
+										The database file contains the main 
+										tables cryptprice, cryptcoin, 
+										cryptasset, crypttrade<br>If you want a 
+										clean databse,first close this app 
+										<strong>and 
+										rename&nbsp; the coinbin.db file</strong>.<br>
+										Relaunch this app and it wll create a new coinbin.db database 
+										using the file coinbin/dbschema.txt<br>You will then need to do the following 
+										in the defined order:<br>NOT TESTED.!</td>
+									</tr>
+								</table>
+								<table style="width: 100%">
+									<tr>
+										<td>
+										<table style="width: 100%">
+											<tr>
+												<td>
+												<table style="width: 100%">
+													<tr>
+														<td style="width: 100%">
+					<table style="width: 100%; color: #000000">
+						<tr>
+							<td style="text-align: left"><a href="javascript:prepExchangeInfo();">Get Exchange Info</a></td>
+				</tr>						<tr>
+							<td style="text-align: left"><a href="javascript:prepTickerStats();">Get Ticker Info</a></td>
+				</tr>
+
+				 						<tr>
+							<td style="text-align: left; white-space:	nowrap;"><a href="javascript:prepCoinPipe();">Get CoinMarketCap.com Info</a></td>
+				</tr><tr>
+							<td style="text-align: left; height: 23px;"><a href="javascript:getBalances(6)">Get Assets</a></td>
+				</tr>
+			</table>
+														</td>
+													</tr>
+												</table>
+												</td>
+												<td width="100%"><table align="right">
+					<tr>
+						<td><span id="lblRunLoop" class="txtSmall txtClrHdr">Run Loop</span></td>
+						<td><div class="switch">
+    <label>
+     
+      <input type="checkbox" id="selRunLoop" name="selRunLoop" onchange="javascript:procRunLoop(this)">
+      <span class="lever"></span>
+     
+    </label>
+  									  </div>	</td>
+					</tr>
+				</table>
+
+												<div id="dvOutput" style="max-width:600px;min-height:150px;max-height:650px;overflow: scroll">&nbsp;</div></td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+								</table>
+								<table style="width: 100%">
+									<tr>
+							<td style="text-align: left"><a href="javascript:app.flushPSpool();">Flush Query Spool</a> 
+							after clicking each Get.... link.</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+								</table>
+								<table style="width: 100%">
+									<tr>
+										<td><table style="width: 100%; color: #000000">
+						<tr>
+							<td style="color: #000000"><table style="width:100%">
+					  <tr>
+						  <td>
+					<table  class="clsDvCntntTtle" width="100%" cellpadding="2"><tr><td width="100%" id="tdTitleBar" class="txtBig">
+						Sql Command Line Output</td></tr></table>
+
+ 
+</td>
+					    </tr>
+					  <tr>
+						  <td>
+						  <table style="width: 100%">
+							  <tr>
+								  <td>
+<textarea name="taSql" id="taSql" style="height: 107px; width: 361px" cols="20" rows="1">select * from cryptprice limit 3;</textarea><br>
+				  
+					  <button onclick="javascript:aLoadDump();"  id="btnCMCsave" class="txtBig crsrPointer slmtable" style="border:0px;background-color:#26a69a;color:white;padding:5px">Run</button>&nbsp;&nbsp;&nbsp;
+							<a href="javascript:JSSHOP.ui.setTinnerHTML('tdSql','');">clear</a></td>
+								  <td style="width:100%"><div id="tdSql" style="max-width:800px;min-height:150px;max-height:650px;overflow: scroll">&nbsp;</div></td>
+							  </tr>
+						  </table>
+						  </td>
+					    </tr>
+					  </table>
+&nbsp;<table style="width: 100%">
+					  <tr>
+						  <td id="tdSql">&nbsp;</td>
+					  </tr>
+				  </table>
+ </td>
+						</tr>
+						</table></td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="tab-page" id="tpAccnt2">
+						<div class="tab" id="tbAccnt2">
+							Opttions</div>
+<table style="width: 100%">
+				<tr>
+					<td style="color: #000000">
+					
+					&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;<a href="javascript:getBalances(7)">Update Assets</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+							optional:
+						 <a href="javascript:resetAssets();">Reset Assets</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						 <a href="javascript:getThreeEthers();">Get 3 Ethers</a> 
+							(for demo mode of course:)</td>
+		</tr>
+	</table>
+							
+					</div>
+					
+					
+					
+					
+					
+					
+					<div class="tab-page" id="tpAccnt3">
+						<div class="tab" id="tbAccnt3">
+							Security</div>
+<table style="width: 100%">
+				<tr>
+					<td style="color: #000000">
+					<table style="width: 100%; color: #000000">
+						<tr>
+							<td style="color: #000000; height: 23px;">
+							<table align="center" width="100%" style="margin: 0 auto;max-width:400px">
+								<tr>
+						  <td>
+					<table  class="clsDvCntntTtle" width="100%" cellpadding="2"><tr>
+						<td width="100%" id="tdTitleBar0" class="txtBig">
+						Binance Api Keys</td><td align="right"><table><tr>
+							<td style="width: 42px">
+							<button onclick="javascript:doBNBSave();"  id="btnBNBsave" class="txtBig crsrPointer" style="border:0px;background-color:#26a69a;color:white;padding:0px"><img alt="18" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" width="4" height="4" onload="dw(this.parentNode, stxt[21]);"  onerror="dw(this.parentNode, stxt[21]);">saveit</button></td><td>
+							<div id="dvSpinner0"></div></td></tr></table></td></tr></table>
+
+ 
+</td>
+					    		</tr>
+								<tr>
+									<td><div id="dvBNBValError"></div></td>
+								</tr>
+								<tr>
+									<td style="height: 23px"><span id="lbl_bnb_key">Key:</span></td>
+								</tr>
+								<tr>
+									<td><input name="tmp_bnb_key" id="tmp_bnb_key" value="" data-ison="v:" class="cls_input_text"  onblur="this.className='cls_input_text'" onfocus="this.className='cls_input_text cls_input_text_focus'"></td>
+								</tr>
+								<tr>
+									<td><span id="lbl_bnb_scrt">Secret:</span></td>
+								</tr>
+								<tr>
+									<td>
+									<input name="tmp_bnb_scrt" id="tmp_bnb_scrt" value="" data-ison="v:" class="cls_input_text"  onblur="this.className='cls_input_text'" onfocus="this.className='cls_input_text cls_input_text_focus'"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+						  <td>
+					<table  class="clsDvCntntTtle" width="100%" cellpadding="2"><tr>
+						<td width="100%" id="tdTitleBar1" class="txtBig">
+						CoinMarketCap.com API Key:</td><td align="right"><table><tr><td>
+							<button onclick="javascript:doCMCSave();"  id="btnCMCsave" class="txtBig crsrPointer" style="border:0px;background-color:#26a69a;color:white;padding:0px"><img alt="18" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" width="4" height="4" onload="dw(this.parentNode, stxt[21]);"  onerror="dw(this.parentNode, stxt[21]);">saveit</button></td><td>
+							<div id="dvSpinner1"></div></td></tr></table></td></tr></table>
+
+ 
+</td>
+					    		</tr>
+								<tr>
+									<td>
+									<input name="tmp_cmc_key" id="tmp_cmc_key" value="" data-ison="v:" class="cls_input_text"  onblur="this.className='cls_input_text'" onfocus="this.className='cls_input_text cls_input_text_focus'"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+						</table>
+		</td>
+		</tr>
+	</table>
+							
+					</div>
+
+					
+					
+					
+					
+					
+					
+					
+
+					
+
+
+
+					
+					
+				</div>
+			</div>
+
+
+
+
+
+
+
+			
+		</div>
+		</td>
+	</tr>
+</table>
+
+
+<div>
+			 <div style="top:-820px;position:absolute"><textarea style="padding:15px" class="txtClrRed txtBold" id="dvOutput" cols="20" name="S3" rows="1"></textarea><textarea style="padding:12px;margin:12px" class="txtClrRed txtBold" id="dvAssetsOutput" cols="20" name="S1" rows="1"></textarea>taCMCtaCMCtaCMCtaCMCtaCMCtaCMCtaCMCtaCMC<textarea id="taCMC" cols="20" name="S2" rows="10">
+
+</textarea></div>
