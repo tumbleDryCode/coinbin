@@ -2,7 +2,7 @@
 	<tr>
 		<td><p><strong>- About:</strong><br>CoinBin is an abstract attempt to use the javafx 
 browser and sqlite to deploy and maintain simple desktop applications. <br>This 
-example uses the Binance API to render realtime data using html, javascript and 
+example uses the Binance Java API to render realtime data using html, javascript and 
 an sqlite database.<br>Alot of the code is from a similar project that uses 
 		javafx, android and a 
 LAMP stack (e-commerce demo), basically for the same deploy and maintain purposeses.<br>
@@ -18,7 +18,8 @@ compiler</span><br>sunRun.bat <span style="color: #808080">// windows .bat file 
 Launch.class</span><br>
 /cbox <span style="color: #808080">// preference files used in java app</span><br>
 /com <span style="color: #808080">// binance api java code, some 
-of it was modified.</span><br>/html <span style="color: #808080">// html files, js, css used by java browser.</span><br>
+of it was modified.</span><br>/html <span style="color: #808080">// html files, 
+js, css used by java browser. home page is index.php</span><br>
 /lib 
 <span style="color: #808080">// bunch of open-sourced java libraries used by this app</span><br>
 /njfbrowser <span style="color: #808080">// main 
@@ -32,24 +33,11 @@ njfbrowser\BinanceHelper</span> to parse Binance API and&nbsp; <span style="colo
 njfbrowser\utils\UtilSQLAdapter</span> to connect to the coinbin.db sqlite 
 database.<br>On llaunch, CoinBin will create/connect to the database and start a 
 simple web server. The java browser will&nbsp; then open page
-<a href="http://localhost">http://localhost</a> which is the /html folder.<br>
-<br><strong>- CoinMarketCap.com API:</strong><br>To get additional coin info you 
-will need a CoinMarketCap.com API key.<br>
-Then enter them in your
-<a href="javascript:tp1.setSelectedIndex(4);tpAccnt.setSelectedIndex(2);">
-Account -&gt; Security</a> tab.<br>
-<br><strong>- Binance API:</strong><br>Public API calls like get ticker prices 
-or exchange info do not require API keys.<br>Private calls In order to trade or get yout balances
-<strong>require</strong> API keys.<br>You can&nbsp; get your Binance API keys at 
-the Binance web site.<br>Then enter them in your
-<a href="javascript:tp1.setSelectedIndex(4);tpAccnt.setSelectedIndex(2);">
-Account -&gt; Security</a> tab.<br>Do not get API keys with Withdraw rights for 
-this app!<br>Did we mention to <strong>Use this app at your own risk.</strong><br>
-Some modifications were made to the included com/Binance API code.<br>Namely 
-atempting to close symbol socket streams when they are not being used etc.<br><br>- <strong>Javascript 
+<a href="http://localhost">http://localhost</a> which is the /html folder.<br><br>- <strong>Javascript 
 to Java Interface Bridge:</strong><br>
 x_booter.js is main loader with alot of spaghetti from other projects.<br>The 
-main binance .js can be found in html/js/x_binance-api.js and x_binance-misc.js<br><br>the
+main binance .js can be found in html/js/x_binance-api.js and x_binance-misc.js<br>
+The
 javascript <strong>app.</strong> object is used to interface with 
 njfbrowser/js_interfaces/JSI_coinBin.java which in turn returns data from 
 CoinBin or the BinanceHelper, etc.<br><br>- <strong>User Interface:</strong><br>
@@ -97,7 +85,25 @@ manualy javascript function app.flushPSpool() to run yor query by flushing the
 spool.<br>The javascript function looperScene() is called from CoinBin every 
 time BinanceHelper finishes a set of queries in the query spool.<br>Basically it 
 allows you to set up tasks in javascript depending at what count your on in the 
-looperScene increment value.<br><br>- <strong>
+looperScene increment value.<br>
+<br><strong>- CoinMarketCap.com API:</strong><br>To get additional coin info you 
+will need a CoinMarketCap.com API key.<br>
+Then enter them in your
+<a href="javascript:tp1.setSelectedIndex(4);tpAccnt.setSelectedIndex(2);">
+Account -&gt; Security</a> tab.<br>
+<br><strong>- Binance API:</strong><br>This app relies on the <em>binance 
+java-api</em> and the version used in this app is probably outdated:<br>You can 
+get the latest build here:<br><em>
+https://github.com/binance-exchange/binance-java-api</em><br>forked from: <em>
+https://github.com/joaopsilva/binance-java-api</em><br>Public API calls like get ticker prices 
+or exchange info do not require API keys.<br>Private calls In order to trade or get yout balances
+<strong>require</strong> API keys.<br>You can&nbsp; get your Binance API keys at 
+the Binance web site.<br>Then enter them in your
+<a href="javascript:tp1.setSelectedIndex(4);tpAccnt.setSelectedIndex(2);">
+Account -&gt; Security</a> tab.<br>Do not get API keys with Withdraw rights for 
+this app!<br>Did we mention to <strong>Use this app at your own risk.</strong><br>
+Some modifications were made to the included com/Binance API code.<br>Namely 
+atempting to close symbol socket streams when they are not being used etc.<br><br>- <strong>
 TODO:</strong><br>
 clean up and comment code.<br>clean up math methods on token price conversions.<br>render 
 quote symbols/Markets Pairs directly from database.<br>seperate simulation mode 
