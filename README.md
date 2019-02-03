@@ -9,7 +9,9 @@ LAMP stack (e-commerce demo), basically for the same deploy and maintain purpose
 		No sucurity exploits checking, refactoring, form-connection validation, 
 		etc. are enforced with CoinBin code.<br>The code 
 is written, rewritten and mashed according to the current imagination spool.<br>
-		It is what it is. Use it at your own risk.</p>
+		It is what it is. Use it at your own risk.<br><br>
+		<img src="html/images/demo.jpg" style="height: 337px; width: 600px; text-align: center"></p>
+		<p>...</p>
 <p><strong>- Structure:</strong><br>conbin.db<span style="color: #808080"> // sqlite database file</span><br>
 dbschema.txt /<span style="color: #808080">/sql structure file read by the njfbrowser\utils\UtilSQLAdapter to 
 create database</span><br>Launch.java <span style="color: #808080">// simple class that calls njfbrowser\main\CoinBin</span><br>
@@ -44,7 +46,10 @@ CoinBin or the BinanceHelper, etc.<br><br>- <strong>User Interface:</strong><br>
 Rendering of the user interface relies on simple html and javascript, json.<br>
 The main index.php file uses ajax requests to include the html/tplates files. 
 this help file is an example.<br>Most of the html UI is found in 
-html/tplates/index_main.<br>The search and nav bar are found in index_nav.<br><br><strong>- Database:</strong><br>Most of the custom database requests are made 
+html/tplates/index_main.<br>The search and nav bar are found in index_nav.<br>
+Clicking on the coin symbol will open trading popup.<br>Clicking on coin name 
+below symbol will open info pop-up.<br>Includes an alerts mock-up.<br>The news 
+tab searches for rss feeds with token symbol.<br><br><strong>- Database:</strong><br>Most of the custom database requests are made 
 using javascript, and each contain a javascript callback function:<br>
 <span style="color: #808080">var oiaqB = 
 "select * from cryptprice limit 3;";&nbsp; // query string</span><br style="color: #808080">
@@ -86,11 +91,6 @@ spool.<br>The javascript function looperScene() is called from CoinBin every
 time BinanceHelper finishes a set of queries in the query spool.<br>Basically it 
 allows you to set up tasks in javascript depending at what count your on in the 
 looperScene increment value.<br>
-<br><strong>- CoinMarketCap.com API:</strong><br>To get additional coin info you 
-will need a CoinMarketCap.com API key.<br>
-Then enter them in your
-<a href="javascript:tp1.setSelectedIndex(4);tpAccnt.setSelectedIndex(2);">
-Account -&gt; Security</a> tab.<br>
 <br><strong>- Binance API:</strong><br>This app relies on the <em>binance 
 java-api</em> and the version used in this app is probably outdated:<br>You can 
 get the latest build here:<br><em>
@@ -108,10 +108,16 @@ TODO:</strong><br>
 clean up and comment code.<br>clean up math methods on token price conversions.<br>render 
 quote symbols/Markets Pairs directly from database.<br>seperate simulation mode 
 from live mode using javascript toggle / css color scheme<br>tune the query 
-spool array.<br>fix javascript json arrays to work correctly with UI.<br>clean up the UI.<br><br>- <strong>
+spool array.<br>fix javascript json arrays to work correctly with UI.<br>clean up the UI.<br>
+<br><strong>- CoinMarketCap.com API:</strong><br>To get additional coin info you 
+will need a CoinMarketCap.com API key.<br>
+Then enter them in your
+<a href="javascript:tp1.setSelectedIndex(4);tpAccnt.setSelectedIndex(2);">
+Account -&gt; Security</a> tab.<br>
+<br>- <strong>
 Credits:</strong><br>
-Most of the credits for open sourced code that is used in this app should be 
-included.<br>But alot of the code has been treated ginzu style, so if you 
+Most of the credits for open sourced code that is used in this app is usually 
+included in the code.<br>But alot of the code has been treated ginzu style, so if you 
 deserve some credit, let us know.<br> </p>
 		</td>
 	</tr>
